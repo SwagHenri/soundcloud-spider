@@ -1,0 +1,19 @@
+{
+  "name": "soundcloud-spider",
+  "version": "1.0.0",
+  "description": "An application for Soundcloud scrapping",
+  "main": "emails_catcher.js",
+  "dependencies": {
+    "nightmare": "^2.10.0",
+    "node": "^0.0.0",
+    "mandrill-api": "^1.0.45",
+    "mysql": "^2.13.0",
+    "vo": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SwagHenri",
+  "license": "ISC"
+}
