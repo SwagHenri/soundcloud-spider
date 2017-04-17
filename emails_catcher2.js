@@ -1,22 +1,19 @@
 var Nightmare = require('nightmare');
 var vo = require('vo');
 var fs = require("fs");
-var nightmare = Nightmare({
-    show: false
-});
+var nightmare = Nightmare({show: false});
 var mysql = require('mysql');
 
 try {
     require("./env.js");
     console.log(process.env.PORT);
-}catch (e){
-}
+}catch (e){}
 
 var connection = mysql.createConnection({
-    host     : process.env.HOST,
-    port     : process.env.DBPORT,
-    user     : process.env.USERNAME,
-    password : process.env.PASSWORD,
+    host     : process.env["HOST"],
+    port     : process.env["DBPORT"],
+    user     : process.env["USERNAME"],
+    password : process.env["PASSWORD"],
     database : 'scrapping-site'
 });
 
