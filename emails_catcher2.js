@@ -3,10 +3,12 @@ var vo = require('vo');
 var fs = require("fs");
 var nightmare = Nightmare({show: false});
 var mysql = require('mysql');
+var jsonfile = require("jsonfile");
+var env = require("./env.js");
 
 try {
     require("./env.js");
-    console.log(process.env.PORT);
+    console.log(process.env.DBPORT);
 }catch (e){}
 
 var connection = mysql.createConnection({
