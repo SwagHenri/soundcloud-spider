@@ -208,7 +208,15 @@ var run = function * () {
 };
 
 
-vo(run)(function(err) {
-    console.dir(err);
-    console.log('done');
-});
+
+
+function start(){
+    vo(run)(function(err) {
+        console.dir(err);
+        console.log('done');
+    });
+}
+
+module.exports = {
+    start: start
+};

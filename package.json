@@ -4,16 +4,27 @@
   "description": "An application for Soundcloud scrapping",
   "main": "emails_catcher.js",
   "dependencies": {
-    "nightmare": "^2.10.0",
-    "node": "^0.0.0",
+    "express": "^4.15.2",
+    "jsonfile": "^2.4.0",
     "mandrill-api": "^1.0.45",
     "mysql": "^2.13.0",
+    "nightmare": "^2.10.0",
+    "node": "^0.0.0",
     "vo": "^4.0.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "SwagHenri",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://SwagHenri@github.com/SwagHenri/soundcloud-spider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SwagHenri/soundcloud-spider/issues"
+  },
+  "homepage": "https://github.com/SwagHenri/soundcloud-spider#readme"
 }
