@@ -208,6 +208,7 @@ var run = function * () {
 
 
 function start(){
+    console.log("START");
     vo(run)(function(err) {
         console.dir(err);
         console.log('done');
