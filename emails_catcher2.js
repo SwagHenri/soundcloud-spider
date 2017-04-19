@@ -22,8 +22,8 @@ var names = [];
 var nbFollowers = [];
 var nbFollowings = [];
 var nbTracks = [];
-var souncloudtarget = 'thebraincollective';
-var artist = 'The Brain Collective';
+var souncloudtarget = 'jack-boy-736713403';
+var artist = 'Jack Boy';
 
 function getNbFollowers(){
     var nbFollowers = document.querySelectorAll('.infoStats__stat a[href$="/followers"] .infoStats__value ');

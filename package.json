@@ -5,6 +5,7 @@
   "main": "emails_catcher.js",
   "dependencies": {
     "express": "^4.15.2",
+    "http": "0.0.0",
     "jsonfile": "^2.4.0",
     "mandrill-api": "^1.0.45",
     "mysql": "^2.13.0",
