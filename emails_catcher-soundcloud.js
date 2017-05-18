@@ -7,7 +7,9 @@ var mysql = require('mysql');
 try {
     require("./env.js");
     console.log(process.env["DBPORT"]);
-}catch (e){}
+}catch (e){
+    console.log(e);
+}
 
 var connection = mysql.createConnection({
     host     : process.env["HOST"],
@@ -22,8 +24,8 @@ var names = [];
 var nbFollowers = [];
 var nbFollowings = [];
 var nbTracks = [];
-var souncloudtarget = 'jack-boy-736713403';
-var artist = 'Jack Boy';
+var souncloudtarget = 'hippishake_records';
+var artist = 'Hippishake Records';
 
 function getNbFollowers(){
     var nbFollowers = document.querySelectorAll('.infoStats__stat a[href$="/followers"] .infoStats__value ');
@@ -155,7 +157,7 @@ var run = function * () {
     soundcloudnames = yield nightmare.evaluate(getSoundcloudnames);
 
 
-    console.log(souncloudtarget + ' a ' + soundcloudnames.length + ' abonnements');
+    console.log(souncloudtarget + ' a ' + soundcloudnames.length + ' abonnés');
 
     for(j = 0; j < soundcloudnames.length; j++) {
 
