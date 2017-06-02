@@ -1,7 +1,7 @@
 var http = require("http");
 var express = require('express');
 var app = express();
-var catcher = require('./emails_catcher-soundcloud.js');
+var catcher = require('./email_catcher.js');
 
 
 app.get('/', function (req, res) {
@@ -10,5 +10,9 @@ app.get('/', function (req, res) {
 
 app.listen(process.env["PORT"], function () {
     console.log('Example app listening on port 8080!');
-    catcher.start();
+    catcher.init(function(){
+        catcher.start(function(){
+            console.log("END");
+        });
+    });
 });

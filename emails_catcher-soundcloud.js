@@ -1,14 +1,14 @@
 var Nightmare = require('nightmare');
 var vo = require('vo');
 var fs = require("fs");
-var nightmare = Nightmare({show: false});
+var nightmare = Nightmare({show: true});
 var mysql = require('mysql');
 
 try {
     require("./env.js");
     console.log(process.env["DBPORT"]);
 }catch (e){
-    console.log(e);
+
 }
 
 var connection = mysql.createConnection({

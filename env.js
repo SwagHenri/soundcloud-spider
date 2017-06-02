@@ -7,6 +7,7 @@ process.env["DBPORT"] = CONFIG.dbport;
 process.env["USERNAME"] = CONFIG.username;
 process.env["PASSWORD"] = CONFIG.password;
 process.env["PORT"] = CONFIG.port;
+process.env["TARGETS"] = CONFIG.targets;
 
 
 
